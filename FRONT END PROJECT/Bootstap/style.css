@@ -1,0 +1,232 @@
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#header {
+    background-color: rgb(127, 232, 232);
+    background: linear-gradient(to right, #b2fefa, #0ed2f7);
+
+}
+
+
+.logo {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 10px;
+    text-align: center;
+    text-shadow: 3px 3px 2px rgba(205, 52, 22, 0.49);
+}
+
+
+
+.logo2 {
+    display: inline-block;
+    margin-left: 10px;
+    color: rgba(238, 5, 5, 0.807);
+
+}
+
+#menu .fa-solid {
+    margin: 5px;
+
+}
+
+#menu {
+    float: right;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu li a {
+    padding: 20px 12px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.1em;
+
+}
+
+
+
+#banner-title h1 {
+    padding: 5px;
+    margin: 0px;
+}
+
+.test-heading {
+    text-align: center;
+}
+
+#banner p {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.test-heading:after {
+    content: "";
+    display: block;
+    background-color: red;
+    width: 100px;
+    height: 3px;
+    margin: 20px auto;
+}
+
+#testimonial i {
+    font-size: 70px;
+    color: black;
+    text-align: center;
+
+
+}
+
+#testimonial {
+    padding: 60px;
+}
+
+
+
+.servicebox {
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+
+
+.servicebox:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    color: #0ed2f7;
+}
+
+.col-md-6:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    color: #0ed2f7;
+}
+
+.news-post:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+
+}
+
+
+.pro {
+    background: linear-gradient(166deg, #6efce9, #5d8ad4, #fceff1);
+    background-size: 180% 180%;
+    animation: gradient-animation 21s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+#testimonial h3 {
+    padding-top: 10px;
+}
+
+
+#owners h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+#owners p {
+    padding: 8px;
+}
+
+#owners h2::after {
+    content: "";
+    display: block;
+    background-color: red;
+    width: 100px;
+    height: 3px;
+    margin: 20px auto;
+}
+
+.author,
+.company {
+    margin-top: 5px;
+    text-align: center;
+}
+
+#owners .image {
+    text-align: center;
+}
+
+.new h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.new h2::after {
+    content: "";
+    display: block;
+    background-color: red;
+    width: 100px;
+    height: 3px;
+    margin: 20px auto;
+}
+
+#news i {
+    margin-right: 8px;
+}
+
+
+#news p {
+    font-size: 20px;
+}
+
+.Read-more {
+    font-size: 18px;
+
+}
+
+.Read-more i {
+    font-size: 15px;
+
+}
+
+.news-post:last-child {
+    padding-bottom: 20px;
+}
+
+.news-post {
+    text-align: center;
+}
+.news-post h3 {
+    margin-top: 30px;
+
+}
+.icon i{
+    font-size: 50px;
+    margin: 20px;
+
+}
+.icon i:hover{
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}

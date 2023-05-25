@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 23px;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        input {
+            border-radius: 21px;
+            font-size: 34px;
+            border: 5px solid rgb(0, 255, 157);
+            height: 40px;
+            width: 456px;
+        }
+
+        button {
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            font-size: 40px;
+            background-color: cadetblue;
+            height: 90px;
+            width: 102px;
+            margin: 5px;
+
+        }
+
+        .calculater {
+            border: 2px solid rgb(1, 1, 1);
+            border-radius: 55px;
+            background-color: #74EBD5;
+            background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display: inline-block;
+            padding: 23px;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Calculater by Himanshu</h2>
+        <div class="calculater">
+            <input type="text " id="screen" name=" search" maxlength="20">
+            <table>
+                <tr>
+                    <td> <button>(</button></td>
+                    <td> <button>)</button> </td>
+                    <td> <button>C</button> </td>
+                    <td> <button>%</button></td>
+                </tr>
+                <tr>
+                    <td> <button>7</button></td>
+                    <td> <button>8</button></td>
+                    <td> <button>9</button></td>
+                    <td> <button>X</button></td>
+                </tr>
+                <tr>
+                    <td> <button>4</button></td>
+                    <td> <button>5</button></td>
+                    <td> <button>6</button></td>
+                    <td> <button>-</button></td>
+                </tr>
+                <tr>
+                    <td> <button>1</button></td>
+                    <td> <button>2 </button></td>
+                    <td> <button>3</button></td>
+                    <td> <button>+</button></td>
+                </tr>
+                <tr>
+                    <td> <button>0</button> </td>
+                    <td> <button>.</button></td>
+                    <td> <button>/</button></td>
+                    <td> <button>=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+
+//     let screen = document.getElementById("screen");
+//     let buttons = document.querySelectorAll("button")
+//     console.log(buttons)
+
+//     buttons.addEventListener("click", (e) => {
+//         console.log(e.target)
+
+
+
+// });
+let string = ""
+let buttons = document.querySelectorAll("button")
+Array.from(buttons).forEach((button) =>{
+         buttons.addEventListener("click",(e)=>
+         {
+            console.log(e.target)
+         })
+})
+
+
+    </script>
+</body>
+
+
+</html>

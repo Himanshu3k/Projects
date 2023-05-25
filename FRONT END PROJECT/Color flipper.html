@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Color flipper</title>
+    <style>
+        .button {
+            text-align: center;
+            margin-top: 300px;
+            font-size: 1.2em;
+
+        }
+
+        #hexa {
+             display: block;
+            font-size: 1.4em;
+            margin: 10px;
+        }
+
+        #btn {
+            width: 20rem;
+            height: 3em;
+            border-radius: 5px;
+            border: transparent;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button">
+        <span id="hexa">#e74c3c</span>
+        <button id="btn">Get New Color</button>
+    </div>
+
+    <script>
+
+        //  method-1
+        //    let color = ['Red', 'Orange', 'Blue', 'Green', 'Pink',"Yellow","Black"];
+        //  document.getElementById("btn").addEventListener('click', () => {
+        //   let randomcolor = color[Math.floor(Math.random() * color.length)]
+        //    document.body.style.background = randomcolor
+        //    document.getElementById("hexa").innerText = randomcolor
+        //   });
+
+
+         let getcolor = () =>
+         {
+              const randomNumber = Math.floor(Math.random() * 16777215);
+             const randomCode = "#" + randomNumber.toString(16);
+             document.body.style.backgroundColor = randomCode;
+             document.getElementById("hexa").innerText = randomCode;
+         }
+
+           document.getElementById("btn").addEventListener("click", getcolor)
+
+
+    </script>
+</body>
+
+</html>
